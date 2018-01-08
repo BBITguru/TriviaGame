@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <title>Best Trivia Game</title>
+  <link rel="stylesheet" type = "text/css" href="assets/css/style.css">
+  <style>@import url('https://fonts.googleapis.com/css?family=Joti+One|Montserrat|Permanent+Marker');</style>
+  <style>
+    #trivContainer{
+        display: none;
+    }
+  </style>
+</head>
+
+<body>
+<div id="container">
+    <h1 id = "tTitle">The Best Trivia Game You've Ever Played... EVER!</h1>
+
+    <!-- show start button on page load then hide when clicked -->
+    <button id="startBtn">START</button>
+
+    <!-- hidden this until start button is clicked -->
+    <div id = "timer">You have: <span id = "timeLeft"></span> seconds left!</div>
+
+<br>
+    <!--Hidden on page load  -->
+    <div id = "trivContainer" display ="none">
+        <h2 id ="trivQuestion">**Trivia Qustion goes here**</h2>
+        <div class="ansGroup">
+          <button class="answer" id="choice0">choice 0</button>
+          <button class="answer" id="choice1">choice 1</button>
+          <button class="answer" id="choice2">choice 2</button>
+          <button class="answer" id="choice3">choice 3</button>
+        </div>
+        <div id="triviaPic"></div>
+    </div>
+    <div id='endGame'></div>
+</div>
+
+<!-- Script -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>

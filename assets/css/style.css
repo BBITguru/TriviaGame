@@ -1,0 +1,76 @@
+body{
+  background-image: url("../images/background.jpg");
+  height: 650px;
+}
+
+#container{
+  display: block;
+  margin: auto;
+  max-width: 720px;
+  height: 100%;
+  text-align: center;
+  background-color: green;
+}
+
+/* How does this work?!?! */
+#container.background-color{
+  opacity: 0.5;
+}
+
+h1#tTitle{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+}
+
+.questionContainer{
+  margin:auto;
+  border: 2px solid black;
+  padding: 10px 10px;
+  max-width: 85%;
+}
+
+.ansGroup .answer{
+  background-color: #4CAF50; /* Green */
+  border: 7px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.ansGroup .answer:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.ansGroup .answer:hover{
+  background-color: #3e8e41;
+}
+
+#startBtn{
+  margin: auto;
+  max-width: 100px;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
+}
+
+.nextBack{
+  margin: auto;
+  border: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 100%; 
+  background-color: green;
+}
+
+#timer{
+  font-family: 'Joti One', cursive;
+  font-size: 24px;
+  text-align: center;
+}
